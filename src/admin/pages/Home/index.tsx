@@ -5,20 +5,19 @@ import { Navbar } from '../../components/Navbar';
 import './style.css';
 
 export const Home = () => {
-    const [collapse, setCollapse] = useState(false);
+  const [collapse, setCollapse] = useState(false);
 
-    const handleCollapse = () => {
-        setCollapse(!collapse);
-    };
+  const handleCollapse = () => {
+    setCollapse(!collapse);
+  };
 
-    return (
-        <div className="container">
-            <Navbar onCollapse={handleCollapse} />
-            <div className={`sidebar ${collapse ? 'sidebar-collapsed' : ''}`}>
-                <Sidebar />
-            </div>
-            <Main />
-        </div>
-    );
+  return (
+    <div className="container">
+      <Navbar onCollapse={handleCollapse} />
+      <Sidebar collapsed={collapse} />
+      <Main />
+    </div>
+  );
 };
+
 

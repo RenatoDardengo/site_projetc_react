@@ -1,8 +1,9 @@
 .navbar{
-    background-color: rgb(247, 247, 248);
+    background-color: rgb(240, 240, 240);
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    /*border-bottom: 1px solid rgb(32,32,35);*/
 }
 .navbar img {
     width: 25px;
