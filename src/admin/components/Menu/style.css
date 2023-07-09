@@ -4,7 +4,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Cascadia Code', sans-serif;
-    font-size: 15px;
+    
 }
 
 .sidebar_item {
@@ -19,11 +19,12 @@
 .sidebar_item span {
     margin-left: 20px;
     color: white;
+    font-size: 13px;
 }
 
 .sidebar_item img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin-left: 20px;
 }
 
