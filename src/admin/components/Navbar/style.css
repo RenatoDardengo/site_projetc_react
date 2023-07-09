@@ -1,0 +1,12 @@
+.navbar{
+    background-color: rgb(247, 247, 248);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.navbar img {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
