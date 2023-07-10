@@ -1,11 +1,14 @@
-import React from 'react'
-import "./style.css"
-export const Main =()=>{
+import React from 'react';
+import "./style.css";
+
+type MainProps = {
+    children: React.ReactNode;
+};
+
+export const Main = ({ children }: MainProps) => {
     return (
-        <div className="main">
-            main
-
+        <div>
+            {children}
         </div>
-
     );
-}
+};

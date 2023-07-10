@@ -10,17 +10,11 @@
 .menu_item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     height: 20px;
     transition: background-color 0.3s ease;
     position: relative;
 }
-
-/*.menu_item span {
-    margin-left: 20px;
-    color: white;
-    font-size: 13px;
-}*/
 
 .menu_text {
     margin-left: 20px;
@@ -44,39 +38,12 @@
 }
 
 .menu {
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
-.dropdown_menu {
-    position: absolute;
-    top: 100%;
-    /* Define a posição abaixo do elemento pai */
-    left: 0;
-    background-color: rgb(0, 11, 22);
-    border: none;
-
-    width: 200px;
-
-}
-
-.dropdown_menu li {
-    padding-left: 80px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.dropdown_menu li:hover {
-    background-color: rgb(22, 119, 255);
-    cursor: pointer;
-}
-
-.empty_space {
-    height: 90px;
-    /* Ajuste a altura conforme necessário */
-}
 
 .menu_item.selected {
-    background-color: rgb(22, 119, 255);
+    background-color: rgb(50, 50, 57);
     cursor: pointer;
 }
 
