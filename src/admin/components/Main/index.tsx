@@ -1,13 +1,13 @@
-import React from 'react';
+import { ReactNode } from "react";
 import "./style.css";
 
-type MainProps = {
-    children: React.ReactNode;
-};
+interface MainProps {
+    children: ReactNode;
+}
 
-export const Main = ({ children }: MainProps) => {
+export const Main: React.FC<MainProps> = ({ children }) => {
     return (
-        <div>
+        <div className='main'>
             {children}
         </div>
     );

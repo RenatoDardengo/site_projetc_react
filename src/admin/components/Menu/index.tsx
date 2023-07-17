@@ -1,22 +1,32 @@
+import React, { useState, ReactNode } from 'react';
 import './style.css';
-import menuSale from "../../assets/img/cart.png";
-import homeIcon from "../../assets/img/home.png";
-import userImg from "../../assets/img/user.ico";
-import menuPost from "../../assets/img/post.png";
-import menuProduct from "../../assets/img/product.png";
-import { useState } from 'react';
+import menuSale from '../../assets/img/cart.png';
+import homeIcon from '../../assets/img/home.png';
+import userImg from '../../assets/img/user.ico';
+import menuPost from '../../assets/img/post.png';
+import menuProduct from '../../assets/img/product.png';
+import { Produto } from '../Produto';
+
+
 type MenuProps = {
     collapsed: boolean;
+    renderComponent: (component: ReactNode) => void;
 };
-export const Menu = ({ collapsed }: MenuProps) => {
-    //irá aramazenar o menu selecionado
+
+export const Menu: React.FC<MenuProps> = ({ renderComponent, collapsed }) => {
     const [selectedMenu, setSelectedMenu] = useState<string | null>(null);
-    //será chamado evendo click da div e receberá como argumento o menu selecionado
+    const [showListarProdutos, setShowListarProdutos] = useState(false);
+
     const handleMenuClick = (menu: string) => {
         setSelectedMenu(menu);
+        setShowListarProdutos(!showListarProdutos);
+
+        // Lógica para renderizar o componente no local desejado
+        if (menu === 'produto') {
+            renderComponent(<Produto />);
+        }
     };
 
-    
     return (
         <div className="menu">
             <div

@@ -1,30 +1,30 @@
-import  { useState } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { Sidebar } from '../../components/Sidebar';
 import { Main } from '../../components/Main';
 import { Navbar } from '../../components/Navbar';
-import {List} from '../../components/Products/List'
 import './style.css';
 
-export const Home = () => {
-  const [collapse, setCollapse] = useState(false);
-  const [currentPage, setCurrentPage] = useState<React.ReactNode>();
+interface HomeProps {
+  children: ReactNode;
+}
 
-  const handleMenuClick = (page: React.ReactNode) => {
-    setCurrentPage(page);
-  };
+export const Home: React.FC<HomeProps> = ({ children }) => {
+  const [collapse, setCollapse] = useState(false);
+  const [currentComponent, setCurrentComponent] = useState<ReactNode | null>(null);
 
   const handleCollapse = () => {
     setCollapse(!collapse);
   };
 
+  const renderComponent = (component: ReactNode) => {
+    setCurrentComponent(component);
+  };
+
   return (
     <div className="container">
       <Navbar onCollapse={handleCollapse} />
-      <Sidebar collapsed={collapse} />
-      <Main>
-        {currentPage === 'products' && <List />}
-        
-      </Main>
+      <Sidebar collapsed={collapse} renderComponent={renderComponent} />
+      <Main>{currentComponent}</Main>
     </div>
   );
 };
