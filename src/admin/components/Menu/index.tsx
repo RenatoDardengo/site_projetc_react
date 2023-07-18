@@ -5,7 +5,8 @@ import homeIcon from '../../assets/img/home.png';
 import userImg from '../../assets/img/user.ico';
 import menuPost from '../../assets/img/post.png';
 import menuProduct from '../../assets/img/product.png';
-import { Produto } from '../Produto';
+import { Products } from '../Products';
+import { Sales } from '../Sales';
 
 
 type MenuProps = {
@@ -22,9 +23,19 @@ export const Menu: React.FC<MenuProps> = ({ renderComponent, collapsed }) => {
         setShowListarProdutos(!showListarProdutos);
 
         // Lógica para renderizar o componente no local desejado
-        if (menu === 'produto') {
-            renderComponent(<Produto />);
+        switch (menu) {
+            case 'sales':
+                renderComponent(<Sales />);
+                break;
+            case 'products':
+                renderComponent(<Products />);
+                break;
+
+
+            default:
+                break;
         }
+
     };
 
     return (
@@ -44,15 +55,15 @@ export const Menu: React.FC<MenuProps> = ({ renderComponent, collapsed }) => {
                 <span className={`menu_text ${collapsed ? 'menu_text_collapsed' : ''}`}>Usuários</span>
             </div>
             <div
-                className={`menu_item ${selectedMenu === 'vendas' ? 'selected' : ''}`}
-                onClick={() => handleMenuClick('vendas')}
+                className={`menu_item ${selectedMenu === 'sales' ? 'selected' : ''}`}
+                onClick={() => handleMenuClick('sales')}
             >
                 <img src={menuSale} alt="sale" />
                 <span className={`menu_text ${collapsed ? 'menu_text_collapsed' : ''}`}>Vendas</span>
             </div>
             <div
-                className={`menu_item ${selectedMenu === 'produto' ? 'selected' : ''}`}
-                onClick={() => handleMenuClick('produto')}
+                className={`menu_item ${selectedMenu === 'products' ? 'selected' : ''}`}
+                onClick={() => handleMenuClick('products')}
             >
                 <img src={menuProduct} alt="product" />
                 <span className={`menu_text ${collapsed ? 'menu_text_collapsed' : ''}`}>Produtos</span>
