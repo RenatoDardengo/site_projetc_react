@@ -13,7 +13,7 @@
     margin-bottom: 15px;
     height: 20px;
     transition: background-color 0.3s ease;
-    position: relative;
+    /*position: relative;*/
 }
 
 .menu_text {
@@ -51,5 +51,12 @@
 @media (max-width:800px) {
     .menu_text {
         display: none;
+    }
+}
+
+@media (max-width:500px) {
+    .menu_item {
+        flex-direction: row;
+
     }
 }
