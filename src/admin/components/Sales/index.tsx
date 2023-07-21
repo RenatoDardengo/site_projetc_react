@@ -1,13 +1,20 @@
-import "./style.css";
 import Car1 from "../../assets/img/car1.webp";
-import Car2 from "../../assets/img/car2.webp"
-import Car3 from "../../assets/img/car3.jpg"
+import Car2 from "../../assets/img/car2.webp";
+import Car3 from "../../assets/img/car3.jpg";
+import { InputText } from "../InputText";
+import { Button } from "../Button";
+import "./style.css";
 export const Sales: React.FC = () => {
     return (
         <div>
+            <div >
             <p className="title"> Cadastro de produtos</p>
-            <div>
-                <input/>
+
+            </div>
+            <div className="search-components space-element">
+                <InputText/>
+                <Button label="Cadastrar" color="flat"/>
+
             </div>
             <div className="product-grid">
                 <div className="product">
@@ -16,8 +23,8 @@ export const Sales: React.FC = () => {
                     <p>Description for Product 1.</p>
                     <p>R$ 100</p>
                     <div className="option-delete-edit">
-                        <p> Editar</p>
-                        <p> Excluir</p>
+                        <p> <Button label="Editar" color="flat" /></p>
+                        <p> <Button label="Excluir" color="flat" /></p>
                     </div>
                 </div>
                 <div className="product">
@@ -26,8 +33,8 @@ export const Sales: React.FC = () => {
                     <p>Description for Product 2.</p>
                     <p>R$ 100</p>
                     <div className="option-delete-edit">
-                        <p> Editar</p>
-                        <p> Excluir</p>
+                        <p> <Button label="Editar" color="flat" /></p>
+                        <p> <Button label="Excluir" color="flat" /></p>
                     </div>
                 </div>
                 <div className="product">
@@ -36,8 +43,8 @@ export const Sales: React.FC = () => {
                     <p>Description for Product 3.</p>
                     <p>R$ 100</p>
                     <div className="option-delete-edit">
-                        <p> Editar</p>
-                        <p> Excluir</p>
+                        <p> <Button label="Editar" color="flat" /></p>
+                        <p> <Button label="Excluir" color="flat" /></p>
                     </div>
                 </div>
                 <div className="product">
@@ -46,8 +53,8 @@ export const Sales: React.FC = () => {
                     <p>Description for Product 2.</p>
                     <p>R$ 100</p>
                     <div className="option-delete-edit">
-                        <p> Editar</p>
-                        <p> Excluir</p>
+                        <p> <Button label="Editar" color="flat" /></p>
+                        <p> <Button label="Excluir" color="flat" /></p>
                     </div>
                 </div>
                 <div className="product">
@@ -56,8 +63,8 @@ export const Sales: React.FC = () => {
                     <p>Description for Product 2.</p>
                     <p>R$ 100</p>
                     <div className="option-delete-edit">
-                        <p> Editar</p>
-                        <p> Excluir</p>
+                        <p> <Button label="Editar" color="flat" /></p>
+                        <p> <Button label="Excluir" color="flat" /></p>
                     </div>
                 </div>
             </div>

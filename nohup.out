@@ -8,3 +8,24 @@
   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
 [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
 Terminated
+
+> site@0.0.0 dev
+> vite
+
+
+  [32m[1mVITE[22m v4.4.2[39m  [2mready in [0m[1m586[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m21:06:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/admin/components/Menu/style.css[22m
+[2m21:06:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/admin/components/Menu/style.css[22m
+[2m21:08:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/admin/components/Menu/style.css[22m
+[2m21:08:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/admin/components/Menu/style.css[22m
+[2m21:08:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/admin/components/Menu/style.css[22m
+[2m21:09:41[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/admin/pages/Home/style.css[22m
+[2m21:11:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/admin/components/Sales/style.css[22m
+[2m21:12:06[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/admin/components/Sales/style.css[22m
+[2m21:13:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/admin/components/Sales/style.css[22m
+[2m21:16:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/admin/components/Sales/style.css[22m
+[2m21:17:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/admin/components/Sales/style.css[22m
+[2m21:17:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/admin/components/Sales/style.css[22m
