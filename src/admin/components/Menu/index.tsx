@@ -5,8 +5,7 @@ import homeIcon from '../../assets/img/home.png';
 import userImg from '../../assets/img/user.ico';
 import menuPost from '../../assets/img/post.png';
 import menuProduct from '../../assets/img/product.png';
-import { Products } from '../Products';
-import { Sales } from '../Sales';
+import { ListProduct } from '../Product/ListProduct';
 
 
 type MenuProps = {
@@ -25,10 +24,10 @@ export const Menu: React.FC<MenuProps> = ({ renderComponent, collapsed }) => {
         // Lógica para renderizar o componente no local desejado
         switch (menu) {
             case 'sales':
-                renderComponent(<Sales />);
+                //renderComponent(<Sales />);
                 break;
             case 'products':
-                renderComponent(<Products />);
+                renderComponent(<ListProduct />);
                 break;
 
 
